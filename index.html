@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kiranmayee- Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    padding-right: 15px; padding-left: 15px; width: 100%; position: fixed; padding: 15px 0;
+    text-transform: uppercase;
+}
+
+.navdiv{
+    display: flex; align-items: center; justify-content: space-between; 
+}
+
+.logo a{
+    font-size: 30px; font-weight: 600; color: orange; font-family: cursive;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.sections{
+    overflow-y: auto; 
+}
+
+section {
+    padding: 70px;
+    margin: 30px;
+}
+
+h1{
+    line-height: 65px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+ p{
+    font-size: 18px;
+    font-family: 'monospace', sans-serif;
+    color: black;
+    line-height: 2.3;
+}
+
+button{
+    width:200px;
+    padding:15px 0;
+    text-align:center;
+    margin:25px 10px;
+    border-radius:25px;
+    font-weight:bold;
+    border:2px solid yellow;
+    background: darkcyan;
+    color:white;
+    cursor:pointer;
+    overflow:hidden;
+}
+
+button a{
+    color: inherit;
+    text-decoration: none;
+}
+
+button a:hover, button a:active {
+text-decoration: none;
+color: yellow;
+}
+
+
+.portfolio-item {
+    margin-bottom: 20px;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    float: right;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+.homeimg{
+    float: right;
+}
+.aboutimg{
+    float: left;
+}
+
+.skill {
+    margin: 20px;
+    text-align: left;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    background-color: #4caf50;
+    color: darkred;
+    height: 100%;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 20px;
+    width: 0;
+    animation: fillBar 2s ease-in-out;
+}
+
+@keyframes fillBar {
+    0% { width: 0; }
+    100% { width: 90%; }
+}
+
+.skill-level.html {
+    width:90% ;
+    animation: fillBar 2s ease-in-out 0.2s;
+}
+
+.skill-level.css {
+    width:80% ;
+    animation: fillBar 2s ease-in-out 0.2s;
+}
+
+.skill-level.javascript {
+    width: 30%;
+    animation: fillBar 2s ease-in-out 0.2s;
+}
+
+.skill-level.c {
+    width: 65%;
+    animation: fillBar 2s ease-in-out 0.2s;
+} 
+
+.skill-level.cpp{
+    width: 50%;
+    animation: fillBar 2s ease-in-out 0.2s;
+}
+
+.fa {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .a, .b, .c, .d {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 36px; line-height: 50px;
+    }
+    font{
+        font-size: 15px;
+    }
+  p {
+    font-size: 10px;
+  }
+  header {
+    background-color: #333;
+    padding-right: 1px; padding-left: 1px; width: 100%; position: fixed; padding: 1px 0;
+    text-transform: uppercase;
+}
+.link{
+    font-size: 5px;
+}
+.mail{
+    font-size: 8px;
+}
+.web{
+    font-size: 10px;
+}
+
+.navdiv{
+    display: flex; align-items: center; justify-content: space-between; 
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+button{
+    width:60px;
+    padding:2px 0;
+    text-align:center;
+    margin:15px 5px;
+    border-radius:25px;
+    font-weight:bold;
+    border:2px solid yellow;
+    background: darkcyan;
+    color:white;
+    cursor:pointer;
+    overflow:hidden;
+}
+ .download{
+    width:180px;
+    padding:15px 0;
+    text-align:center;
+    margin:25px 10px;
+    border-radius:25px;
+    font-weight:bold;
+    border:2px solid yellow;
+    background: darkcyan;
+    color:white;
+    cursor:pointer;
+    overflow:hidden;
+}
+section {
+    padding: 25px;
+    margin: 20px;
+    line-height: 25px;
+}
+
+.logo a{
+    font-size: 6px; font-weight: 600; color: orange; font-family: cursive;
+}
+  .projectsimg{
+    height: 100px; width: 100px;
+  }
+   .aboutimg{
+    height: 100px; width: 100px;
+  }
+  .homeimg{
+    height: 100px; width: 80px;
+  }
+  .fa {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.fa-facebook {
+  background: #3B5998;
+  <background-image: url(https://logolook.net/wp-content/uploads/2021/06/Facebook-Logo.svg);
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-telegram {
+  background: #125688;
+  color: white;
+}
+
+.link:hover{
+    color: yellow;
+    text-decoration: none;
+}
+
+
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navdiv"> 
+            <div class="logo"><a href="#" class="link">kiranmayee</a></div>
+            <ul>
+                <li><a href="#home" class="link">Home</a></li>
+                <li><a href="#about" class="link">About</a></li>
+                <li><a href="#skills" class="link">Skills</a></li>
+                <li><a href="#projects" class="link">Projects</a></li>
+                <li><a href="#resume" class="link">Resume</a></li>
+                <li><a href="#contactno" class="link">Contact Me</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+      
+      <div class="sections">
+
+    <section id="home">
+        <img class="homeimg"src="C:\Users\jayas\Downloads\WhatsApp Image 2023-09-24 at 5.37.28 PM (1).jpeg" height="370" width="270">
+            <font size="10"> Hello!!</font><br>
+            <font size="9"> Welcome to My Portfolio,</font></br>
+            <font size="8" color="yelloworange"><i> I'am kiranmayee</i></font><br>
+            <font size="4" face="verdana" color="orange" class="web"> Web Designer | Web Developer</font><br>
+            <button type="button"><span></span><a href="#contactno" class="link">CONTACT ME</a></button>
+            <button type="button"><span></span><a href="#resume" class="link">SEE MY RESUME</a></button>
+    </section>
+
+    <section id="about">
+        <h1><font color="red" family="fantasy"><u>About me</u></font></h1>
+        <img class="aboutimg" src="C:\Users\jayas\Downloads\portfolio1.jpg" height="450" width="400" >
+        <p>Hello, I'm kiranmayee kandregula, and I'm passionate about web development. Welcome to my portfolio! Iam currently pursuing my btech in CSE-DS domain in Vignan's institute of information technology, Duvvada, Visakhapatnam. I'm deeply passionate about Web designing, Data analysis and Machine learning. I believe in constant learning and strive to be a Data scientist. When I'm not immersed in this domain, you can often find me in photography, dancing and crafting. Feel free to reach out to me at kiranmayeekandregula514@gmail.com. I'm always open to new opportunities and collaborations. Thank you for taking the time to explore my portfolio. I'm excited to connect with you and explore new opportunities together.</p>
+    </section>
+
+    <section id="skills">
+         <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar">
+            <div class="skill-level html">90%</div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar">
+            <div class="skill-level css">80%</div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name">JAVASCRIPT</div>
+        <div class="skill-bar">
+            <div class="skill-level javascript">40%</div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name">C</div>
+        <div class="skill-bar">
+            <div class="skill-level c">70%</div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name">C++</div>
+        <div class="skill-bar">
+            <div class="skill-level cpp">60%</div>
+        </div>
+    </div>
+    </section>
+
+     <section id="projects">
+        <h2><font color="red" family="fantasy"><u>My Projects</u></font></h2>
+        <div class="portfolio-item">
+            <h1><font color="darkgreen"><i>SKAN Restaurant</i></font></h1>
+            <img class="projectsimg" src="C:\Users\jayas\Downloads\WhatsApp Image 2023-07-02 at 3.04.43 PM.jpeg" height="300" width="300" alt="Project 1">
+            <p>I'm super excited to share this project with you all. It is a simple restaurant website built using HTML & CSS. This website consists of Home, About, Menu, Reservation and Contact Us web pages. As it is a group project, I took charge to implement About and Menu web pages. Throughout the project, we believed in our dedication and commitment towards our work. The timeline of this project is 15 days. By the end of this project, we have expertised in HTML and CSS and looking forward to update this website using javascript. Let the learning continues...</p>
+            <p>GITHUB repository:<a href="https://kiranmayeee.github.io/SKAN_RESTAURANT/"> SKAN Restaurant </a></p>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2><font color="red" family="fantasy"><u>My Resume</h2></u></font></h2>
+        <button type="button" class="download"><span></span><a href="C:\Users\jayas\Downloads\Resume-kiranmayee-Kandregula.pdf"> DOWNLOAD MY RESUME</a></button>
+    </section>
+
+    <section id="contactno">
+        <h2><font color="red" family="fantasy"><u>Contact Me</u></h2>
+        <p>Feel free to reach out to me:</p>
+        <p>Email: <font color="green" class="mail"> kiranmayeekandregula514@gmail.com</font></p>
+        <p>Phone number: <font color="green" class="mail"> 9490891278</font></p>
+    </section>
+
+</div>
+
+    <footer>
+        <p style="color:yellow;">&copy; 2023 Your kiranmayee</p>
+<p style="color:lightpink;"><a href="https://www.facebook.com/kiranmayeesrinivas" class="fa fa-facebook"></a> 
+    <a href="https://twitter.com/kiranmayee_514" class="fa fa-twitter"></a>
+    <a href="https://in.pinterest.com/kiranmayeekandregula" class="fa fa-pinterest"></a>
+    <a href="https://www.instagram.com/kiranmayeesrinivas/" class="fa fa-instagram"></a>
+    <a href="https://t.me/kiranmayeesrinivas" class="fa fa-telegram"></a></p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
